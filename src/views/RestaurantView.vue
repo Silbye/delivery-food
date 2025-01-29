@@ -13,7 +13,7 @@
       </div>
       <div class="restaurant-page-bottom">
         <ProductCard
-          v-for="(product, index) in products"
+          v-for="(product, index) in data.products"
           :key="index"
           :data="product"
         />
@@ -28,50 +28,6 @@ export default {
   data() {
     return {
       data: {},
-      products: [
-        {
-          name: "Ролл угорь стандарт",
-          info: "Рис, угорь, соус унаги, кунжут, водоросли нори.",
-          price: 250,
-          image: new URL("@/assets/img/products/1.png", import.meta.url),
-          quantity: 1,
-        },
-        {
-          name: "Калифорния лосось стандарт",
-          info: "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
-          price: 395,
-          image: new URL("@/assets/img/products/2.png", import.meta.url),
-          quantity: 1,
-        },
-        {
-          name: "Окинава стандарт",
-          info: " Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...",
-          price: 250,
-          image: new URL("@/assets/img/products/3.png", import.meta.url),
-          quantity: 1,
-        },
-        {
-          name: "Цезарь маки хl",
-          info: "Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...",
-          price: 250,
-          image: new URL("@/assets/img/products/4.png", import.meta.url),
-          quantity: 1,
-        },
-        {
-          name: "Ясай маки стандарт 185 г",
-          info: "Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг",
-          price: 250,
-          image: new URL("@/assets/img/products/5.png", import.meta.url),
-          quantity: 1,
-        },
-        {
-          name: "Ролл с креветкой стандарт",
-          info: "Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы",
-          price: 250,
-          image: new URL("@/assets/img/products/6.png", import.meta.url),
-          quantity: 1,
-        },
-      ],
     };
   },
   components: {

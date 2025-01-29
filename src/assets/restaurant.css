@@ -47,6 +47,14 @@
   color: #8c8c8c;
 }
 
+.product-image {
+  width: 384px;
+  height: 214px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: rgb(31, 31, 31);
+}
+
 .product-info-bottom {
   display: flex;
   gap: 29px;

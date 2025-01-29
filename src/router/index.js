@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Restaurant from "../views/RestaurantView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
@@ -14,6 +14,7 @@ const router = createRouter({
       path: "/restaurants/:name",
       component: Restaurant,
     },
+    { path: "/:pathMatch(.*)", redirect: "/" },
   ],
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 };

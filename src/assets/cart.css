@@ -6,6 +6,7 @@
   background: #000;
   opacity: 0.4;
   z-index: 2;
+  overflow-y: hidden;
 }
 
 .cart-box {
@@ -20,9 +21,11 @@
   z-index: 3;
   max-width: 800px;
   min-width: 400px;
+  max-height: 800px;
   display: flex;
   flex-direction: column;
   gap: 45px;
+  overflow-y: auto;
 }
 
 .cart-top {
